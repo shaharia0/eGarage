@@ -149,7 +149,7 @@ Phone: +8801680848558 <br>
 Chowdhury group & Industry,<br>
 Gulshan 2,<br>
 Dhaka -1212, Bangladesh <br>
-Phone: +8801680848558 <br>
+Phone: +880758339563 <br>
 <a href="https://www.facebook.com/shaharia0/">www.Chowdhuryindustry.com</a><br>
 </div>
 <!-- address area end -->
@@ -161,7 +161,7 @@ Phone: +8801680848558 <br>
 <div class="container">
 <div class="row  py-3">
 <div class="col-md-6">
-<span class="pr-2">Follow Us :</span>
+<span class="pr-2">Follow us :</span>
 <a href="https://www.facebook.com/shaharia0/" class="pr-2 fi-color"><i class="fab fa-facebook-f"></i></a>
 <a href="https://www.instagram.com/chowdhury_shahariaa/" class="pr-2 fi-color"><i class="fab fa-instagram"></i></a>
 <a href="https://www.linkedin.com/in/shahariar-chowdhury-5bb7b4165/" class="pr-2 fi-color"><i class="fab fa-linkedin-in"></i></i></a>
@@ -169,7 +169,7 @@ Phone: +8801680848558 <br>
 </div>
 <!-- second column -->
 <div class="col-md-6 text-right">
-<small>Copyright@2020, All rights reserved by Shaharia Chowdhury</small>
+<small>Copyright@2021, All rights reserved by Shaharia Chowdhury</small>
 <small class="ml-2"><a href="#">Admin Login</a></small>
 </div>
 </div>
