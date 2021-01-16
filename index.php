@@ -33,7 +33,7 @@
 </div>
 <div class="collapse navbar-collapse" id="myMenu">
 <ul class="navbar-nav pl-5 custom-nav">
-<li class="nav-item"><a href="#registration" class="nav-link">Registration</a></li>
+<li class="nav-item"><a href="user_registration.php" class="nav-link">Registration</a></li>
     <li class="nav-item"><a href="requester/userlogin.php" class="nav-link">Sign In</a></li>
     </ul>
 </div>
@@ -45,7 +45,7 @@
     <h1 class="text-uppercase  text-dark font-weight-bold">Welcome to eGarage</h1>
     <p class="font-italic">Customer's happiness is our aim</p>
     <a href="requester/userlogin.php" class="btn btn-success mr-4">Sign In</a>
-    <a href="#registration" class="btn btn-danger mr-4">Sign up</a>
+    <a href="user_registration.php" class="btn btn-danger mr-4">Sign up</a>
 </div>
 
 </header>
@@ -83,9 +83,6 @@
 </div>
 </div>
 <!-- our services part end -->
-<!-- registration part start -->
-<?php include('user_registration.php') ?>
-<!-- registration part end -->
 <!-- our mechanic part start -->
 <div class="jumbotron bg-info">
 <div class="container">
