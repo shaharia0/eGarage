@@ -165,9 +165,9 @@ Phone: +880758339563 <br>
 <a href="https://www.youtube.com/watch?v=HRvabYOgTZg" class="pr-2 fi-color"><i class="fab fa-youtube"></i></a>
 </div>
 <!-- second column -->
-<div class="col-md-6 text-right">
+<div class="col-md-6 text-right" >
 <small>Copyright@2021, All rights reserved by Shaharia Chowdhury</small>
-<small class="ml-2"><a href="#">Admin Login</a></small>
+<small class="ml-2"><a href="Admin/adminlogin.php" style="color:black;">Admin Login</a></small>
 </div>
 </div>
 </div>
