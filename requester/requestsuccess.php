@@ -40,7 +40,10 @@ echo "<div class='ml-5 mt-5'>
        <th> Service Description </th>
        <td>".$row['description_info']."</td>
     </tr>
-    
+    <tr>
+    <td><form class='d-print-none'><input class='btn btn-danger' type='submit' value='Print'
+     onClick='window.print()'></form></td>
+    </tr>
     </tbody>
     </table>
     </div>";

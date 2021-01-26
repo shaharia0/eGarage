@@ -1,39 +1,25 @@
 <?php
 session_start();
-if (isset($_SESSION['is_login'])){
- $userEmail =  $_SESSION['rEmail'];
+if(isset($_SESSION['is_adminlogin'])){
+    $adminEmail = $_SESSION['adminEmail'];
 }else{
-  echo "<script>location.href='userlogin.php'</script>";
+    echo "<script>location.href='adminlogin.php'</script>";
 }
-define('TITLE','Service Status');
-define('PAGE','checkStatus');
-include ('includes/sidebar.php');
+define('TITLE','Work Order');
+define('PAGE','workorder');
+include ('includes/adminsidebar.php');
 include ('../dbconnection.php');
 ?>
-<!-- checK status second column start -->
+<!-- view assign work list start scenod column -->
 <div class="col-sm-6 mt-5 mx-3">
-<form action="" method="post" class="form-inline d-print-none">
-<div class="form-group mr-3 font-weight-bold">
-<label for="checkid">Enter Service Request ID: </label>
-<input type="text" class="form-control ml-3" name="search" id="checkid" onkeypress="isInputNumber(event)">
-</div>
-<button type="submit" class="btn btn-danger">Search</button>
-</form>
+<h3 class="text-center">Assigned Work Details</h3>
 <?php
-if(isset($_REQUEST['search'])){
-    if($_REQUEST['search'] == ""){
-        $passmessage = '<div class="alert alert-warning col-sm-6 ml-5 mt-2">Fill the field first</div>';
-    }else{
-        $id = $_REQUEST['search'];
-        $sql = "SELECT * FROM assign_work_db WHERE service_id = $id";
-        $assignresult = $conn->query($sql);
-        $row = $assignresult->fetch_assoc();
-        // $temp = ['service_id'];
-        // print_r($row) ;
-        if((!is_null($row)) && ($row['service_id'] == $_REQUEST['search'])){ 
-    ?>
-    <h3 class="text-center mt-5">Assigned Work Details</h3>
-    <table class="table table-bordered">
+  if(isset($_REQUEST['view'])){
+      $sql = "SELECT * FROM assign_work_db WHERE service_id = {$_REQUEST['id']}";
+      $result = $conn->query($sql);
+      $row = $result->fetch_assoc();
+      ?>
+      <table class="table table-bordered">
     <tbody>
     <tr>
     <td>Request ID</td>
@@ -81,31 +67,17 @@ if(isset($_REQUEST['search'])){
     </tr>
     </tbody>
     </table>
-    <div class="text-center">
-    <form action="" class="mb-3 d-print-none">
+    <div class="text-center mb-3">
+    <form action="" class=" d-print-none d-inline">
     <input class="btn btn-danger mr-2" type="submit" value="Print" onclick="window.print()">
+    </form>
+    <form action="workorder.php" class=" d-print-none d-inline">
     <input class="btn btn-secondary" type="submit" value="close">
     </form>
     </div>
-    <?php }
-    else{
-     echo '<div class="alert alert-info mt-4">Your Request is Still Pending</div>';
-     }
-   }
-}
-?>
-<?php if(isset($passmessage)) {echo $passmessage;} ?>
+      <?php } ?>
 </div>
-<!-- checK status second column end -->
-<!-- only number inout fields -->
-<script>
-function isInputNumber(evt){
-    var ch =String.fromCharCode(evt.which);
-   if(!(/[0-9]/.test(ch))){
-       evt.preventDefault();
-   }
-}
-</script>
+<!-- view assign work list end scenod column -->
 <?php
-include ('includes/footer.php');
+include('includes/adminfooter.php');
 ?>
