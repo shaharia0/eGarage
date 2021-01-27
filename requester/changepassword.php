@@ -41,14 +41,24 @@ if(isset($_REQUEST['passupdate'])){
 <label for="inputnewPassword">New password</label>
 <input type="password" class="form-control" id="inputnewPassword" placeholder="New password" 
 name="rPassword">
+<input type="checkbox" onclick="myFunction()">Show Password
 </div>
-<button type="submit" class="btn btn-danger mr-4 mt-4 " name="passupdate">Update</button>
-<button type="reset" class="btn btn-secondary mt-4 ">Reset</button>
+<button type="submit" class="btn btn-danger mr-4 mt-2 " name="passupdate">Update</button>
+<button type="reset" class="btn btn-secondary mt-2">Reset</button>
 <?php if(isset($passmessage)) {echo $passmessage;} ?>
 </form>
 </div>
 <!-- chnage password column end -->
-
+<script>
+function myFunction() {
+  var x = document.getElementById("inputnewPassword");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
 <?php
 include ('includes/footer.php');
 ?>

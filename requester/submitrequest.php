@@ -31,20 +31,13 @@ if(isset($_REQUEST['submitrequest'])){
         $sql = "INSERT INTO submit_request_db (request_info, description_info, customer_name, customer_address, customer_area, customer_zip, customer_email, customer_phone, customer_date)
         VALUES ('$serviceInfo','$serviceDescription','$customerName','$customerAddress1',
         '$customerAddress2','$customerZip','$customerEmail','$customerPhone','$customerDate')";
-        //echo $sql;
-        // try{
-        //     $tmp = $conn->query($sql);
-        // }catch(Exception  $et){
-        //     echo $et;
-        // }
+
         if($conn->query($sql)==TRUE){    
             $genid = mysqli_insert_id($conn);
             $passmessage = "<div class='alert alert-success col-sm-6 ml-5 mt-2'>
             Request Submitted Successfully </div>";
-        // $_SESSION['myid'] = $generateid;
+             $_SESSION['myid'] = $genid;
             echo "<script>console.log($genid)</script>";
-            $_SESSION['myid'] = $genid;
-        // echo "<script>location.href='requestSuccess.php'</script>";
             echo "<script>location.href='requestsuccess.php'</script>";
         }else{
             $passmessage = "<div class='alert alert-danger col-sm-6 ml-5 mt-2'>

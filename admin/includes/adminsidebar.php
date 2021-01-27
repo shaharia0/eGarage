@@ -28,12 +28,12 @@
     <i class="fas fa-tachometer-alt"></i>Dashboard</a>
     </li>
     <li class="nav-item">
-    <a class="nav-link <?php if(PAGE=='workorder') {echo 'active';} ?>" href="workorder.php">
-    <i class="fab fa-accessible-icon"></i>Work Order</a>
-    </li>
-    <li class="nav-item">
     <a class="nav-link <?php if(PAGE=='servicerequest') {echo 'active';} ?> " href="servicerequest.php">
     <i class="fas fa-aligh center"></i>Service Request</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link <?php if(PAGE=='workorder') {echo 'active';} ?>" href="workorder.php">
+    <i class="fab fa-accessible-icon"></i>Work Order</a>
     </li>
     <li class="nav-item">
     <a class="nav-link <?php if(PAGE=='customerlist') {echo 'active';} ?>" href="customerlist.php">

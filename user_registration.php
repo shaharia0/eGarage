@@ -68,7 +68,8 @@ if(isset($_REQUEST['rSignup'])){
 <div class="form-group">
 <i class="fas fa-key"></i>
 </i> <label for="name" class="font-weight-bold pl-2">Password</label>
-<input type="password" class="form-control" placeholder="Enter your Password" name="rPassword">
+<input type="password" class="form-control" placeholder="Enter your Password" name="rPassword" id="myInput">
+<input type="checkbox" onclick="myFunction()">Show Password
 </div>
 <button type="submit" class="btn btn-danger mt-3 btn-block shadow-sm font-weight-bold" name="rSignup">Sign Up</button>
 <em style="font-size:10px;">Note - By clicking Sign Up , you agree to our Terms, Data policy and Cooike Policy </em>
@@ -83,6 +84,16 @@ if(isset($error_message)){
 </div>
 </div>
   <!-- javascript files -->
+  <script>
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
   <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

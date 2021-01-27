@@ -51,7 +51,8 @@ if(!isset($_SESSION['is_login'])){
     </div>
     <div class="form-group">
     <i class="fas fa-key"></i><label for="pass" class="font-weight-bold pl-2">Password</label>
-    <input type="password" class="form-control" placeholder="Enter Your Password" name="rPassword" required>
+    <input type="password" class="form-control" placeholder="Enter Your Password" name="rPassword" id="myInput" required>
+    <input type="checkbox" onclick="myFunction()">Show Password
     </div>
     <button type="submit" class="btn btn-success mt-4 font-weight-bold btn-block shadow-sm">Sign In </button>
     <?php if(isset($message)) {echo $message;} ?>
@@ -61,6 +62,16 @@ if(!isset($_SESSION['is_login'])){
     </div>
     </div>
     <!-- javascript files -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
     <script src="../js/jquery.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>

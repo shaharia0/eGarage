@@ -11,11 +11,6 @@ include ('includes/adminsidebar.php');
 include ('../dbconnection.php');
 
 ?>
-
-
-
-
-
     <div class="col-sm-9 col-md-10"> <!------sidebar second column start-->
     <div class="row text-center mx-5">
     <div class="col-sm-4 mt-5">

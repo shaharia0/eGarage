@@ -92,7 +92,7 @@
 <div class="card shadow-lg mb-2">
 <div class="card-body text-center">
 <img src="images/p1.jpg" class="img-fluid" style="border-radius:100px;" alt="shaharia">
-<h4 class="card-title">Mr john</h4>
+<h4 class="card-title">Mr Rahim</h4>
 <p class="card-text">Inspect vehicle systems to repair, maintain and upgrade!</p>
 </div>
 </div>
@@ -101,7 +101,7 @@
 <div class="card shadow-lg mb-2">
 <div class="card-body text-center">
 <img src="images/p2.jpg" class="img-fluid" style="border-radius:100px;" alt="shaharia">
-<h4 class="card-title">David Ibrahim </h4>
+<h4 class="card-title">Mr Karim </h4>
 <p class="card-text">Conduct routine maintenance work and replacing fluids, </p>
 </div>
 </div>
@@ -110,7 +110,7 @@
 <div class="card shadow-lg mb-2">
 <div class="card-body text-center">
 <img src="images/p3.jpg" class="img-fluid" style="border-radius:200px;" alt="shaharia">
-<h4 class="card-title">William</h4>
+<h4 class="card-title">Mr Rafiq</h4>
 <p class="card-text">Repair or replace broken or dysfunctional parts and fix issues (e.g. leaks)!</p>
 </div>
 </div>
@@ -119,7 +119,7 @@
 <div class="card shadow-lg mb-2">
 <div class="card-body text-center">
 <img src="images/p4.jpg" class="img-fluid" style="border-radius:100px;" alt="shaharia">
-<h4 class="card-title"> jack smith</h4>
+<h4 class="card-title"> Mr Safiq</h4>
 <p class="card-text">Provide accurate estimates (cost, time, effort) for a repair or maintenance job!</p>
 </div>
 </div>
